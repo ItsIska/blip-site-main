@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap'); /*Imports the Montserrat font.*/
+
+:root {
+    --dark-green: #16502d;      /*Green colors*/
+    --mint-green: #80ffb3;
+    --light-green: #d5ffe6;
+    --dark-blue: #0044aa;       /*Blue colors*/
+    --regular-blue: #5555ff;
+    --peach-orange: #ff9955;    /*Orange color*/
+    --white: #FFFFFF;           /*White and black*/
+    --almost-black: #1a1a1a;
+
+    font-size: 10px; /*Makes it easier to scale by REM*/
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#header {
+    background-color: var(--mint-green);
+    padding: 1.3rem 5rem;
+    width: 100%;
+    height: 6rem;
+    position: fixed;
+    z-index: 2;
+}
+
+#header-filler {
+    height: 6rem;
+}
+
+#header-logo {
+    max-height: 100%;
+    float: left;
+}
+
+#header-navbar {
+    float: right;
+    height: 100%; /*Makes the navbar fill the entire height of the header*/
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-list li {
+    font-size: 2rem;
+    font-weight: 600;
+    float: left;
+    margin-left: 3rem;
+    transition: color 0.2s;
+}
+
+.navbar-list li:hover {
+    color: var(--regular-blue);
+}
+
+.navbar-list a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.get-blip-button {
+    color: var(--white);
+    background-color: var(--regular-blue);
+    box-shadow: -0.1rem 0.1rem 5px var(--almost-black);
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    transition: color 0.2s;
+}
+
+.get-blip-button:hover {
+    color: var(--regular-blue);
+    background-color: var(--white);
+}
+
+.regular-blue {
+    color: var(--regular-blue);
+}
+
+#introduction {
+    height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#blip-introduction-image {
+    width: auto;
+    height: 30rem;
+    filter: drop-shadow(-0.5rem 0.5rem 0.5rem var(--almost-black));
+}
+
+#blip-introduction-text {
+    margin-left: 7rem;
+}
+
+#blip-introduction-headline {
+    font-weight: 900;
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+#blip-introduction-headline u{
+    text-decoration-color: var(--mint-green);
+    text-decoration-thickness: 0.8rem;
+}
+
+#blip-introduction-sub {
+    font-size: 3.5rem;
+}
